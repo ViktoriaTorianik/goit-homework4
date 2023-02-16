@@ -242,6 +242,7 @@ letter-spacing: 0.02em;
     color: var(--basic-font);
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 /* What are we doing */
 
@@ -294,6 +295,34 @@ text-transform: capitalize;
     text-align: center;
 }
 
+/* social -соцсети */
+
+.social-list{
+display: flex;
+gap: 24px;
+}
+
+.social-link{
+
+}
+
+.social-icon{
+width: 16px;
+height: 16px;
+}
+
+.social-item{
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    background-color: var(--color-brand);
+    align-items: center;
+    justify-content: center;
+}
+.social-item:hover{
+    background-color: var(--background-color-button);
+}
 /* footer */
 
 .footer{
@@ -385,6 +414,7 @@ letter-spacing: 0.02em;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+
 }
 .filter-link{
     text-decoration: none;
