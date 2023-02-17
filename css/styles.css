@@ -7,7 +7,8 @@
    --background-color-section: #F4F4FD;
    --secondary-font-color: #FFFFFF;
    --iconfooter: #31D0AA;
-   --text-footer-color:  #e7e9fc;;
+   --text-footer-color:  #e7e9fc;
+   --customers-icon-color: #8E8F99;
 
 }
 
@@ -289,6 +290,9 @@ text-transform: capitalize;
     flex-basis: calc((100% - 72px) / 4);
     background-color: var(--secondary-font-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 #2E2F42,
+    0 1px 1px 0 #2E2F42;
+    
 }
 .team-box{
     padding: 32px 16px;
@@ -347,8 +351,8 @@ gap: 24px;
     height: 100%;
     align-items: center;
     justify-content: center;
-fill: #8E8F99;
-border: 1px solid #8E8F99;
+fill: var(--customers-icon-color);
+border: 1px solid var(--customers-icon-color);
 border-radius: 4px;
 
 
@@ -368,9 +372,6 @@ height: 56px;
     display: flex;
     width: 168px;
     height: 88px;
-    /* border: 1px solid #8E8F99;
-border-radius: 4px; */
-justify-content: center;
     
 }
 
@@ -397,6 +398,35 @@ max-width: 264px;
     
     line-height: 1.16;
 }
+
+.social-icon-footer{
+    width: 24px;
+    height: 24px;
+    }
+    .social-list-footer{
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin-top: 16px;
+        }
+
+        .footer-social-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #424355;
+        }
+ .footer-social-link:hover{
+    background-color: var(--iconfooter);
+ }
+ .footer-bloc{
+    display: flex;
+    gap: 120px;
+ }       
+
 /* портфолио */
 
 .filter{
@@ -446,6 +476,7 @@ border-radius: 4px;
     color: var(--secondary-font-color);
     background-color: var(--background-color-button);
     border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    
 }
 .filter-scroll{
@@ -470,6 +501,9 @@ letter-spacing: 0.02em;
 .filter-link{
     text-decoration: none;
 }
+.filter-title:hover{
+    box-shadow:0 2px 1px 0 #2E2F42, 0 1px 1px 0 #2E2F42;
+}
 /* container */
 .container{
     width: 1158px;
@@ -477,5 +511,5 @@ letter-spacing: 0.02em;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-   border: 1px solid tomato; 
+   /* border: 1px solid tomato;  */
 }
