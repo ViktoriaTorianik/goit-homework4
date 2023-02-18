@@ -54,6 +54,7 @@ button
 }
 .border-header{
     border-bottom: 1px solid var(--text-footer-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .top-line{
      display: flex;
@@ -160,6 +161,7 @@ border-radius: 4px;
 text-align: center;
 min-width: 169px;
 border: 1px solid transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover{
     background-color: var(--background-color-button);
@@ -203,7 +205,7 @@ border: 1px solid transparent;
     align-items: center;
     justify-content: center;
     display: flex;
-   
+   margin-bottom: 8px;
 }
 /* .scroll-box::before{
     display: block;
@@ -327,7 +329,7 @@ height: 16px;
     height: 40px; 
     
 }
-.social-link:hover{
+.social-link:hover, .social-link:focus{
     background-color: var(--background-color-button);
 }
 
@@ -355,16 +357,16 @@ border-radius: 4px;
 
 
 }
-.customers-link:hover{
-    border: 1px solid var(--background-color-button);
+.customers-link:hover,.customers-link:focus{
+    border-color:  var(--background-color-button);
     fill: var(--background-color-button);
 }
 
-.customers-icon{
+/* .customers-icon{
 width: 104px;
 height: 56px;
 
-}
+} */
 
 .customers-item{
     display: flex;
@@ -381,7 +383,7 @@ height: 56px;
     background-color:var(--headlines-font) ;
 }
 .footer-text{
-    margin-top: 16px;
+   margin-top: 16px;
     color: var(--text-footer-color);
     line-height: 1.5;
 letter-spacing: 0.02em;
@@ -417,14 +419,19 @@ max-width: 264px;
             border-radius: 50%;
             background-color: #424355;
         }
- .footer-social-link:hover{
+ .footer-social-link:hover, .footer-social-link:focus{
     background-color: var(--iconfooter);
  }
  .footer-bloc{
     display: flex;
     gap: 120px;
  }       
-
+.footer-list{
+    color: var(--text-footer-color);
+    font-weight: 500;
+    line-height: 1.5;
+letter-spacing: 0.02em;
+}
 /* портфолио */
 
 .filter{
@@ -497,10 +504,11 @@ letter-spacing: 0.02em;
 
 }
 .filter-link{
+    display: block;
     text-decoration: none;
 }
 
-.filter-title:hover{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+.filter-link:hover, .filter-link:focus{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
 
 /* container */
 .container{
